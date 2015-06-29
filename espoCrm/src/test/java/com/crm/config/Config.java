@@ -8,7 +8,7 @@ import java.util.Properties;
 public class Config {
 	
 	public static Properties getConfigProperties() throws IOException{
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\auro\\config\\config.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\crm\\config\\config.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
 		return prop;		

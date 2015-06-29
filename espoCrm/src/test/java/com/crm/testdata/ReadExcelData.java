@@ -16,7 +16,7 @@ public class ReadExcelData {
 	
 	public static Sheet getExlData() throws EncryptedDocumentException, InvalidFormatException, IOException{
 		
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//com//crm//testdata//testdata.xlsx");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\crm\\testdata\\testdata.xlsx");
 		
 		wb = WorkbookFactory.create(fis);
 		
