@@ -10,7 +10,6 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.crm.reusableMethods.ReusableMethods;
 import com.crm.testdata.ReadExcelData;
@@ -20,12 +19,13 @@ public class Login extends ReusableMethods{
 	
 	Properties or_prop;
 	Sheet sheet;
-	@Test
+	
+	
 	public void login() throws IOException, EncryptedDocumentException, InvalidFormatException{
 		
-		invokeBrowser();
+				invokeBrowser();
 		
-		sheet = ReadExcelData.getExlData();			
+				sheet = ReadExcelData.getExlData();			
 							
 				String userName = sheet.getRow(1).getCell(0).getStringCellValue();				
 				String passWord = sheet.getRow(1).getCell(1).getStringCellValue();					
@@ -48,8 +48,7 @@ public class Login extends ReusableMethods{
 					
 					System.out.println("Logo is not present");
 				}				
-				driver.findElement(By.xpath(or_prop.getProperty("menu_dropdown"))).click();				
-				driver.findElement(By.xpath(or_prop.getProperty("logout"))).click();				
+								
 	}
 	
 }

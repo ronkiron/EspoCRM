@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.testoscripts.Login">
+      <class name="com.crm.testoscripts.AccountsTabTest">
         <methods>
-          <include name="login"/>
+          <include name="accountsTabTest"/>
         </methods>
-      </class> <!-- com.crm.testoscripts.Login -->
+      </class> <!-- com.crm.testoscripts.AccountsTabTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
